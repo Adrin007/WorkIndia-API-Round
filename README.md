@@ -40,6 +40,7 @@ This project is a RESTful API developed based on problem statements and requirem
     DB_USER=<your-database-username>
     DB_PASSWORD=<your-database-password>
     DB_NAME=<your-database-name>
+    APP_PORT=<your-app-port>
     JWT_SECRET=<your-jwt-secret>
     ADMIN_SECRET_KEY=<your-admin-api-key>
    ```
