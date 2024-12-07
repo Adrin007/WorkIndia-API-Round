@@ -81,8 +81,8 @@ This project is a RESTful API developed based on problem statements and requirem
     userId INT NOT NULL,
     trainId INT NOT NULL,
     booked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-    FOREIGN KEY (train_id) REFERENCES trains(id) ON DELETE CASCADE
+    FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (trainId) REFERENCES trains(id) ON DELETE CASCADE
     )
    ```
 ## API Endpoints
