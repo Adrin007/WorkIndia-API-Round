@@ -30,7 +30,7 @@ exports.login = async (req, res) => {
 exports.getTickets = async(req,res) => {
   const {userId} = req.body
   const [tickets] = await db.query(`SELECT * FROM bookings WHERE userId = ?`,[userId])
-  if (tickets.length === 0){
+  if (tickets.length == 0){
     return res.status(200).json({message:"No Tickets Booked Yet!"})
   }
   res.json(tickets)
