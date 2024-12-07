@@ -7,9 +7,9 @@ const router = express.Router()
 
 router.post("/register",register)
 router.post("/login",login)
-router.post("/insertTrain",verifyAdminKey,insertTrain)
-router.post("/getTrains",verifyJwtToken,getTrains)
+router.post("/admin/insertTrain",verifyAdminKey,insertTrain)
+router.get("/getTrains",verifyJwtToken,getTrains)
 router.post("/bookSeat",verifyJwtToken,bookSeat)
-router.post("/getTickets",verifyJwtToken,getTickets)
+router.get("/bookings/getTickets",verifyJwtToken,getTickets)
 
 module.exports = router
